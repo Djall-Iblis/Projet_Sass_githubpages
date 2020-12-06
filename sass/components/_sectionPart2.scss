@@ -1,0 +1,71 @@
+#part2 {
+    max-height: 900px;
+
+    main {
+        padding: 100px 0px 0px 0px;
+        
+        background-image: url('/IIM_Archi_Front_GulpSass/img/background-we-are.png');
+        background-repeat: no-repeat;
+        background-position: right;
+
+        div {
+            width: 50%;
+            margin-left: 70px;
+        }
+    
+
+        article {
+            margin: 70px 0px 0px 100px;
+
+            h2 {
+                font-family: $fontLobster;
+                font-weight: $lobster400;
+                font-size: 20px;
+                color: $blue;
+            }
+
+            h3 {
+                color: $black;
+                font-family: $fontPoppins;
+                font-size: 50px;
+                font-weight: $poppins600;
+            }
+
+            p {
+                color: $black;
+                font-family: $fontPoppins;
+                font-size: 16px;
+                font-weight: $poppins300;
+                width: 500px;
+
+                margin: 20px 0px;
+            }
+
+            button {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #part2 {
+        max-height: 900px;
+
+        main {
+            position: relative;
+            background-image: none;
+
+            div {
+                opacity: 0.3;
+                position: absolute;
+            }
+
+            article {
+                margin: 70px 0px 0px 150px;
+
+                z-index: 1;
+            }
+        }
+    }
+}
